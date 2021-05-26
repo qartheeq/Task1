@@ -6,7 +6,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { NewEmployeeComponent } from './new-employee/new-employee.component';
-
+import { NgxMaskModule, IConfig } from 'ngx-mask';
+const maskConfigFunction: () => Partial<IConfig> = () => {
+  return {
+    validation: false,
+  };
+};
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +21,8 @@ import { NewEmployeeComponent } from './new-employee/new-employee.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgxMaskModule.forRoot(maskConfigFunction)
   ],
   providers: [],
   bootstrap: [AppComponent]
