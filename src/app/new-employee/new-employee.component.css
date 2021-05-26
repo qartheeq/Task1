@@ -1,0 +1,28 @@
+.emp-container {
+    padding:70px;
+    width:auto;
+    height:700px;
+    border-width:20px;
+    border-style:solid;
+    border-color:floralwhite;
+}
+.btn{
+    border-radius: 60px;
+}
+label{
+    width: 140px;
+    font-weight:bold
+}
+input,select{
+    width:300px;
+    margin-left: 25px;
+}
+.form-group{
+    display: flex;
+    padding: 5px;
+}
+.save{
+    float:right;
+    margin-top: 200px;
+    margin-right: 50px;
+}
